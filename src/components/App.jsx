@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Nav from './Nav';
+import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="App" ></div>
+        <Nav />
+      </Router>
+    );
+  }
 }
 
 export default App;
